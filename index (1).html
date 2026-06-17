@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Behind The Escrow Desk</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Lora', Georgia, serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #08142d;
+}
+.bg {
+  position: fixed;
+  inset: 0;
+  background-image: url('Cover_page_photo.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 20, 45, 0.83);
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+}
+.eyebrow {
+  color: #c9a84c;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+h1 {
+  color: #f5ecd7;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+.tagline {
+  color: #c9a84c;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.diamond-rule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0 28px;
+  width: 200px;
+}
+.diamond-rule .line {
+  flex: 1;
+  height: 1px;
+  background: #c9a84c;
+}
+.diamond-rule .gem {
+  color: #c9a84c;
+  font-size: 10px;
+}
+a.link-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 16px 22px;
+  border: 1px solid #c9a84c;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+  background: transparent;
+}
+a.link-btn:hover {
+  background: rgba(201,168,76,0.15);
+}
+a.link-btn.featured {
+  background: rgba(201,168,76,0.12);
+  border-width: 1.5px;
+}
+.link-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 4px;
+  font-family: 'Lora', Georgia, serif;
+}
+.link-title {
+  display: block;
+  font-size: 15px;
+  color: #f5ecd7;
+  line-height: 1.4;
+  font-family: 'Lora', Georgia, serif;
+}
+.footer {
+  margin-top: 32px;
+  color: rgba(201,168,76,0.45);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.corner {
+  position: fixed;
+  color: #c9a84c;
+  font-size: 16px;
+  z-index: 2;
+  opacity: 0.6;
+}
+.corner.tl { top: 16px; left: 16px; }
+.corner.tr { top: 16px; right: 16px; }
+.corner.bl { bottom: 16px; left: 16px; }
+.corner.br { bottom: 16px; right: 16px; }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <span class="corner tl">◆</span>
+  <span class="corner tr">◆</span>
+  <span class="corner bl">◆</span>
+  <span class="corner br">◆</span>
+  <div class="content">
+    <p class="eyebrow">California Escrow Professional</p>
+    <h1>Behind The Escrow Desk</h1>
+    <p class="tagline">30 years of escrow wisdom, demystified</p>
+    <div class="diamond-rule">
+      <div class="line"></div>
+      <span class="gem">◆</span>
+      <div class="line"></div>
+    </div>
+    <a class="link-btn featured" href="https://escrowdesk.gumroad.com/l/free-buyer-guide">
+      <span class="link-label">Free Gift</span>
+      <span class="link-title">5 Things Every Buyer Must Know Before Escrow Opens</span>
+    </a>
+    <a class="link-btn" href="https://escrowdesk.gumroad.com/l/first-time-buyer-guide">
+      <span class="link-label">The Complete Guide</span>
+      <span class="link-title">First-Time Buyer's Guide to Escrow — $27</span>
+    </a>
+    <a class="link-btn" href="https://www.instagram.com/behindtheescrowdesk">
+      <span class="link-label">Instagram</span>
+      <span class="link-title">@behindtheescrowdesk — Tips, Education & More</span>
+    </a>
+    <a class="link-btn" href="mailto:info@behindtheescrowdesk.com">
+      <span class="link-label">For Real Estate Agents</span>
+      <span class="link-title">Bulk Copies for Your Clients — Contact Us</span>
+    </a>
+    <p class="footer">BehindTheEscrowDesk.com</p>
+  </div>
+</body>
+</html>
